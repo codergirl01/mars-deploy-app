@@ -11,8 +11,8 @@ function App() {
 
   const fetchImages = (sol, camera) => {
    
-  
-    fetch(`https://mars-backend.onrender.com/api/photos?sol=${sol}&camera=${camera}`)
+  //https://mars-backend.onrender.com
+    fetch(`/api/photos?sol=${sol}&camera=${camera}`)
     .then((data) => data.json())
     .then((data) => setImages(data))
     .catch((error) => {
